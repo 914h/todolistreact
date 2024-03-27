@@ -62,6 +62,7 @@ function Todo() {
 
     const clearTasks = () => {
         setTasks([]);
+        setCompletedTasks([]);
     }
 
     const deleteTask = (index) => {
