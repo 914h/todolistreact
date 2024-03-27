@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Rubik:ital@0;1&display=swap');
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*{
+  font-family: "Rubik", sans-serif;
+}
+body{
+  margin: 0;
+}
+button{ 
+  font-size: 20px;
+  margin: 5px;
+  padding: 10px;
+  background-color: #007ea7;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.todolist{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:10%;
+}
+
+.head{
+  width: 40%;
+  height: 40vh;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -20px;
+}
+.body{
+  width: 100%;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+}
+.container h1 {
+  margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.body ul {
+  list-style: none;
+  padding: 0;
+   width: 40%;
+}
+
+.body li {
+  margin-bottom: 10px; /* Adjust spacing as needed */
+  background-color: rgba(240, 248, 255, 0.164);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 100%; 
+  border-radius: 15px;
+  font-size: large;
+} 
+span{
+  margin-left: 30px;
+}
+.container input[type="text"] {
+  padding: 20px;
+    width: 93%;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size: large;
+    margin-bottom: 15px;
+}
+.edited{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.edited input[type="text"] {
+    width: 80%;
+    align-items: center;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size: large;
+}
+#checkButton{
+  background-color: rgba(47, 255, 75, 0.548);
+}
+
+#commands {
+  border-radius: 15px;
+  outline: transparent;
+  padding: 0.8rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+} 
+
+.container li button {
+  border-radius: 15px;
+  outline: transparent;
+  padding: 0.8rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons {
+  margin-left: auto;
+
+}
+
+b{
+  background-color: #007ea7;
+  padding: 8px;
+  border-radius: 5px;
+
+}
+
+li.completed {
+  background-color: #363636;
+  text-decoration: line-through;
+  opacity: 0.5; 
+  
+}
+li.completed #deletebutton{
+  opacity: 1;
+}
+li{
+  transition: 0.3s all;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .todolist{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:10%;
+  }
+  
+  .head{
+    width: 80%;
+    height: 60vh;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -20px;
+  }
+  .body{
+    width: 100%;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+  }
+  .container h1 {
+    margin-bottom: 20px; /* Adjust spacing as needed */
+  }
+  
+  .body ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .body li {
+    margin-bottom: 10px; /* Adjust spacing as needed */
+    background-color: rgba(240, 248, 255, 0.164);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 90%; 
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+  .buttons  {
+    /* Styles for buttons within .buttons class */
+    border-radius: 15px;
+    outline: transparent;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: auto;
+
+
+  }
+  .container li button {
+    border-radius: 15px;
+    outline: transparent;
+    font-size: medium;
+    padding: 0.8rem 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+  span{
+    padding: 15px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .buttono button{
+    border-radius: 35px;
+    outline: transparent;
+    font-size: medium;
+    padding: 0.8rem 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+  .edited{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .edited input[type="text"] {
+    width: 80%;
+    margin-top: 5%;
+    font-size: medium;
+    padding: 13px;
+    align-items: center;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size: large;
+}
+}
+@media (min-width: 786px) and (max-width: 1200px) {
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .todolist{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:10%;
+  }
+  
+  .head{
+    width: 80%;
+    height: 60vh;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -20px;
+  }
+  .body{
+    width: 100%;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+  }
+  .container h1 {
+    margin-bottom: 20px; /* Adjust spacing as needed */
+  }
+  
+  .body ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .body li {
+    margin-bottom: 10px; /* Adjust spacing as needed */
+    background-color: rgba(240, 248, 255, 0.164);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 90%; 
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+  .buttons  {
+    /* Styles for buttons within .buttons class */
+    border-radius: 15px;
+    outline: transparent;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: auto;
+
+
+  }
+  .container li button {
+    border-radius: 15px;
+    outline: transparent;
+    font-size: medium;
+    padding: 0.8rem 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+  span{
+    padding: 15px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .buttono button{
+    border-radius: 35px;
+    outline: transparent;
+    font-size: medium;
+    padding: 0.8rem 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+  .edited{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .edited input[type="text"] {
+    width: 80%;
+    margin-top: 5%;
+    font-size: medium;
+    padding: 13px;
+    align-items: center;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size: large;
+}
+}
