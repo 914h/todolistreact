@@ -1,12 +1,13 @@
+// vite.config.js
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react'; // Correct import statement for the plugin
+import react from '@vitejs/plugin-react';
 
-// Define your Vite configuration
 export default defineConfig({
-  plugins: [react()], // Use react() instead of reactPlugin()
+  plugins: [react()],
   build: {
+    // Configure tree shaking to remove unused Font Awesome icons
     rollupOptions: {
-      external: ['react-toastify'],
+      treeshake: true,
     },
   },
 });
