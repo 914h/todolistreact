@@ -67,8 +67,11 @@ function Todo() {
 
     const deleteTask = (index) => {
         const updatedTasks = [...tasks];
+        const updatedcompletedTasks = [...completedTasks];
         updatedTasks.splice(index, 1);
+        updatedcompletedTasks.splice(index, 1);
         setTasks(updatedTasks);
+        setCompletedTasks(updatedcompletedTasks);
     }
 
     const editTask = (index) => {
